@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                     editPlayerOneView.setVisibility(View.GONE);
                     playerOneNameText.setVisibility(View.VISIBLE);}
 
+
                     else {
 
                         playerOneNameText.setText(playerOneName);
