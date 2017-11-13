@@ -187,7 +187,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Finding logs text view. and adding to this view every hit of player.
         TextView scoreLogs = (TextView) findViewById(R.id.logs);
-        scoreLogs.append("\n" + playerOneName + " hit " + ballcolor + " +" + score + ", total: " + scoreOne);
+        scoreLogs.append("\n" + playerOneName + " hit " + ballcolor + ", total: " + scoreOne);
 
         //Logs scroll vie always scroll down to show latest logs
         final ScrollView scrollview = ((ScrollView) findViewById(R.id.logs_scroll_view));
@@ -203,43 +203,43 @@ public class MainActivity extends AppCompatActivity {
     //Buttons that add score to P1
     public void plusOneScoreP1(View view) {
         scoreOne += +1;
-        ballcolor = "red";
+        ballcolor = "red +1";
         displayP1Score(scoreOne);
     }
 
     public void plusTwoScoreP1(View view) {
         scoreOne += +2;
-        ballcolor = "green";
+        ballcolor = "green +2";
         displayP1Score(scoreOne);
     }
 
     public void plusThreeScoreP1(View view) {
         scoreOne += +3;
-        ballcolor = "yellow";
+        ballcolor = "yellow +3";
         displayP1Score(scoreOne);
     }
 
     public void plusFourScoreP1(View view) {
         scoreOne += +4;
-        ballcolor = "brown";
+        ballcolor = "brown +4";
         displayP1Score(scoreOne);
     }
 
     public void plusFiveScoreP1(View view) {
         scoreOne += +5;
-        ballcolor = "blue";
+        ballcolor = "blue +5";
         displayP1Score(scoreOne);
     }
 
     public void plusSixScoreP1(View view) {
         scoreOne += +6;
-        ballcolor = "pink";
+        ballcolor = "pink +6";
         displayP1Score(scoreOne);
     }
 
     public void plusSevenScoreP1(View view) {
         scoreOne += +7;
-        ballcolor = "black";
+        ballcolor = "black +7";
         displayP1Score(scoreOne);
     }
 
@@ -259,7 +259,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Finding logs text view. and adding to this view every hit of player.
         TextView scoreLogs = (TextView) findViewById(R.id.logs);
-        scoreLogs.append("\n" + playerTwoName + " hit " + ballcolor + " +" + score + ", total: " + scoreTwo);
+        scoreLogs.append("\n" + playerTwoName + " hit " + ballcolor + ", total: " + scoreTwo);
 
         //Logs scroll vie always scroll down to show latest logs
         final ScrollView scrollview = ((ScrollView) findViewById(R.id.logs_scroll_view));
@@ -277,44 +277,44 @@ public class MainActivity extends AppCompatActivity {
     //Buttons that add score to P2
     public void plusOneScoreP2(View view) {
         scoreTwo += +1;
-        ballcolor = "red";
+        ballcolor = "red +1";
         displayP2Score(scoreTwo);
 
     }
 
     public void plusTwoScoreP2(View view) {
         scoreTwo += +2;
-        ballcolor = "green";
+        ballcolor = "green +2";
         displayP2Score(scoreTwo);
     }
 
     public void plusThreeScoreP2(View view) {
         scoreTwo += +3;
-        ballcolor = "yellow";
+        ballcolor = "yellow +3";
         displayP2Score(scoreTwo);
     }
 
     public void plusFourScoreP2(View view) {
         scoreTwo += +4;
-        ballcolor = "brown";
+        ballcolor = "brown +4";
         displayP2Score(scoreTwo);
     }
 
     public void plusFiveScoreP2(View view) {
         scoreTwo += +5;
-        ballcolor = "blue";
+        ballcolor = "blue +5";
         displayP2Score(scoreTwo);
     }
 
     public void plusSixScoreP2(View view) {
         scoreTwo += +6;
-        ballcolor = "pink";
+        ballcolor = "pink +6";
         displayP2Score(scoreTwo);
     }
 
     public void plusSevenScoreP2(View view) {
         scoreTwo += +7;
-        ballcolor = "black";
+        ballcolor = "black +7";
         displayP2Score(scoreTwo);
     }
 
