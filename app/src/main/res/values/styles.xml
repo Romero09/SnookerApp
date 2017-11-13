@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ballButton">
+        <item name="android:layout_width">52dp</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+
+    <style name="scoreText">
+        <item name="android:textSize">56sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:textAlignment">center</item>
+
+    </style>
+
+    <style name="addDeleteButton">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="editTextPlayerName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:inputType">textCapSentences</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="playerNameTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+
+</resources>
