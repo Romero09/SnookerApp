@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
 
                     else {
 
-                        playerTwoNameText.setText(playerOneName);
+                        playerTwoNameText.setText(playerTwoName);
                         editPlayerTwoView.setVisibility(View.GONE);
                         playerTwoNameText.setVisibility(View.VISIBLE);}
 
