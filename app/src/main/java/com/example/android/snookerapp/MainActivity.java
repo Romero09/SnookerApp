@@ -11,6 +11,8 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import static com.example.android.snookerapp.R.id.player_one_name_show;
+
 public class MainActivity extends AppCompatActivity {
 
     //Global variable for player names because they can be changed
@@ -44,11 +46,19 @@ public class MainActivity extends AppCompatActivity {
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 if (actionId == EditorInfo.IME_ACTION_DONE) {
                     playerOneName = String.valueOf(editPlayerOneView.getText());
-                    TextView playerOneNameText = (TextView) findViewById(R.id.player_one_name_show);
-                    playerOneNameText.setText(playerOneName);
-                    editPlayerOneView.setVisibility(View.GONE);
-                    playerOneNameText.setVisibility(View.VISIBLE);
+                    TextView playerOneNameText = (TextView) findViewById(player_one_name_show);
 
+                    if(playerOneName.isEmpty()){
+                        playerOneName = "Player 1";
+                        playerOneNameText.setText(playerOneName);
+                    editPlayerOneView.setVisibility(View.GONE);
+                    playerOneNameText.setVisibility(View.VISIBLE);}
+
+                    else {
+
+                        playerOneNameText.setText(playerOneName);
+                    editPlayerOneView.setVisibility(View.GONE);
+                    playerOneNameText.setVisibility(View.VISIBLE);}
 
                     return true;
                 }
@@ -58,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //onClikc listener to change backward EdixText player 1 visible, to chnage player Name
-        final TextView playerOneNameText = (TextView) findViewById(R.id.player_one_name_show);
+        final TextView playerOneNameText = (TextView) findViewById(player_one_name_show);
         playerOneNameText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -77,9 +87,18 @@ public class MainActivity extends AppCompatActivity {
                 if (actionId == EditorInfo.IME_ACTION_DONE) {
                     playerTwoName = String.valueOf(editPlayerTwoView.getText());
                     TextView playerTwoNameText = (TextView) findViewById(R.id.player_two_name_show);
-                    playerTwoNameText.setText(playerTwoName);
-                    editPlayerTwoView.setVisibility(View.GONE);
-                    playerTwoNameText.setVisibility(View.VISIBLE);
+
+                    if(playerTwoName.isEmpty()){
+                        playerTwoName = "Player 2";
+                        playerTwoNameText.setText(playerTwoName);
+                        editPlayerTwoView.setVisibility(View.GONE);
+                        playerTwoNameText.setVisibility(View.VISIBLE);}
+
+                    else {
+
+                        playerTwoNameText.setText(playerOneName);
+                        editPlayerTwoView.setVisibility(View.GONE);
+                        playerTwoNameText.setVisibility(View.VISIBLE);}
 
 
                     return true;

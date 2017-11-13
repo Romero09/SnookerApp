@@ -39,7 +39,7 @@
                 <EditText
                     android:id="@+id/player_one_name"
                     style="@style/editTextPlayerName"
-                    android:text="Player 1" />
+                    android:hint="Player 1"/>
 
                 <TextView
                     android:id="@+id/player_one_name_show"
@@ -194,7 +194,7 @@
                 <EditText
                     android:id="@+id/player_two_name"
                     style="@style/editTextPlayerName"
-                    android:text="Player 2" />
+                    android:hint="Player 1" />
 
                 <TextView
                     android:id="@+id/player_two_name_show"
