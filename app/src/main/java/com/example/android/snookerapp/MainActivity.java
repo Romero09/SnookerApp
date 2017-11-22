@@ -31,29 +31,33 @@ public class MainActivity extends AppCompatActivity {
     int scoreTwo = 0;
 
 
+    //Saving instances in case of rotating to Landscape
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt("scoreOne", scoreOne);
         outState.putInt("scoreTwo", scoreTwo);
         outState.putString("playerOneName", playerOneName);
         outState.putString("playerTwoName", playerTwoName);
+        //Saving text in Logs Text view
         TextView scoreLogs = (TextView) findViewById(R.id.logs);
         outState.putString("Logs", String.valueOf(scoreLogs.getText()));
 
     }
 
-
+    //Returnin back all variables
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         scoreOne = savedInstanceState.getInt("scoreOne");
         scoreTwo = savedInstanceState.getInt("scoreTwo");
         playerOneName = savedInstanceState.getString("playerOneName");
         playerTwoName = savedInstanceState.getString("playerTwoName");
-        String logs = savedInstanceState.getString("Logs");
 
+        //Getting back saved text in logs textview
+        String logs = savedInstanceState.getString("Logs");
         TextView scoreLogs = (TextView) findViewById(R.id.logs);
         scoreLogs.setText(logs);
 
+        //using this method to show up restored scores
         displayP1Score(scoreOne);
         displayP2Score(scoreTwo);
 
@@ -222,6 +226,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    //Method to make logs in logs TextView from player one
     public void logsP1() {
         //Finding logs text view. and adding to this view every hit of player.
         TextView scoreLogs = (TextView) findViewById(R.id.logs);
@@ -307,6 +312,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //Method to make logs in logs TextView from player two
     public void logsP2(){
         //Finding logs text view. and adding to this view every hit of player.
         TextView scoreLogs = (TextView) findViewById(R.id.logs);
